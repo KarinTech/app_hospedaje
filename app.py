@@ -48,14 +48,14 @@ class AlquilerManager:
 alquiler_manager = AlquilerManager()
 
 # Crear alquileres
-alquiler_manager.crear_alquiler(1, "Apartamento céntrico","Bariloche", "https://cf.bstatic.com/xdata/images/hotel/max1280x900/422916059.jpg?k=a609bc8d48d3df0e53fce7f04581b712869fd2a9f5a58bb934332025fce4ca80&o=&hp=1", 35000,"https://www.booking.com/Share-sRdnqx")
-alquiler_manager.crear_alquiler(2, "Casa en la montaña ", "Bariloche", 40000)
-alquiler_manager.crear_alquiler(3, "Chalet en la montaña", "Carlos Paz", 30000)
+alquiler_manager.crear_alquiler(1, "-Apartamento céntrico","Bariloche", "https://cf.bstatic.com/xdata/images/hotel/max1280x900/422916059.jpg?k=a609bc8d48d3df0e53fce7f04581b712869fd2a9f5a58bb934332025fce4ca80&o=&hp=1", 33000,"https://www.booking.com/Share-sRdnqx")
+alquiler_manager.crear_alquiler(2, "Casa en la montaña ", "Bariloche","https://cf.bstatic.com/xdata/images/hotel/max1280x900/422916059.jpg?k=a609bc8d48d3df0e53fce7f04581b712869fd2a9f5a58bb934332025fce4ca80&o=&hp=1",40000,'https://www.booking.com/Share-sRdnqx')
+alquiler_manager.crear_alquiler(3, "Chalet en la montaña", "Carlos Paz", "https://cf.bstatic.com/xdata/images/hotel/max1280x900/422916059.jpg?k=a609bc8d48d3df0e53fce7f04581b712869fd2a9f5a58bb934332025fce4ca80&o=&hp=1",50000,'https://www.booking.com/Share-sRdnqx')
 
 # Obtener alquileres
 alquileres = alquiler_manager.obtener_alquileres()
 for alquiler in alquileres:
-    print(f"ID: {alquiler.id_alquiler}, Nombre: {alquiler.nombre},Descripcion: {alquiler.descripcion}, Local: {alquiler.local},Foto: {alquiler.img} Precio: {alquiler.precio}")
+    print(f"ID: {alquiler.id_alquiler}, Nombre: {alquiler.nombre},Descripcion: {alquiler.descripcion}, Local: {alquiler.local},Foto: {alquiler.img} Precio: {alquiler.precio} Reservar:{alquiler.link_reservar}")
 
 # Actualizar un alquiler
 if alquiler_manager.actualizar_alquiler(2, "Apartamento en el centro", "Ciudad de México", 180):
