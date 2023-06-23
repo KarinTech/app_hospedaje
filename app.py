@@ -48,9 +48,9 @@ class AlquilerManager:
 alquiler_manager = AlquilerManager()
 
 # Crear alquileres
-alquiler_manager.crear_alquiler(1, "-Apartamento céntrico","Bariloche", "https://cf.bstatic.com/xdata/images/hotel/max1280x900/422916059.jpg?k=a609bc8d48d3df0e53fce7f04581b712869fd2a9f5a58bb934332025fce4ca80&o=&hp=1", 33000,"https://www.booking.com/Share-sRdnqx")
-alquiler_manager.crear_alquiler(2, "Casa en la montaña ", "Bariloche","https://cf.bstatic.com/xdata/images/hotel/max1280x900/422916059.jpg?k=a609bc8d48d3df0e53fce7f04581b712869fd2a9f5a58bb934332025fce4ca80&o=&hp=1",40000,'https://www.booking.com/Share-sRdnqx')
-alquiler_manager.crear_alquiler(3, "Chalet en la montaña", "Carlos Paz", "https://cf.bstatic.com/xdata/images/hotel/max1280x900/422916059.jpg?k=a609bc8d48d3df0e53fce7f04581b712869fd2a9f5a58bb934332025fce4ca80&o=&hp=1",50000,'https://www.booking.com/Share-sRdnqx')
+alquiler_manager.crear_alquiler(1,"Departamento Vivi", "Apartamento céntrico","Bariloche", "https://cf.bstatic.com/xdata/images/hotel/max1280x900/422916059.jpg?k=a609bc8d48d3df0e53fce7f04581b712869fd2a9f5a58bb934332025fce4ca80&o=&hp=1", 344000,"https://www.booking.com/Share-sRdnqx")
+alquiler_manager.crear_alquiler(2, "pepito","Casa en la montaña ", "Bariloche","https://cf.bstatic.com/xdata/images/hotel/max1280x900/422916059.jpg?k=a609bc8d48d3df0e53fce7f04581b712869fd2a9f5a58bb934332025fce4ca80&o=&hp=1",40000,'https://www.booking.com/Share-sRdnqx')
+alquiler_manager.crear_alquiler(3, "chalet", "Chalet en la montaña", "Carlos Paz", "https://cf.bstatic.com/xdata/images/hotel/max1280x900/422916059.jpg?k=a609bc8d48d3df0e53fce7f04581b712869fd2a9f5a58bb934332025fce4ca80&o=&hp=1",50000,'https://www.booking.com/Share-sRdnqx')
 
 # Obtener alquileres
 alquileres = alquiler_manager.obtener_alquileres()

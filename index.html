@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lista de Hospedajes</title>
+    <title>Lista de Hospedajes en Bariloche</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 </head>
 <body>
@@ -12,6 +12,7 @@
     <table>
         <thead>
             <tr>
+            {%block content%}
                 <th>ID</th>
                 <th>Descripción</th>
                 <th>Nombre</th>
@@ -24,8 +25,9 @@
         <tbody>
             {% for alquiler in alquileres %}
             <tr>
+            
                 <td>{{ alquiler.id }}</td>
-                <td>{{ alquiler.descripcion }}</td>
+                <td>{{ alquiler.descripcion }}Descripción</td>
                 <td>{{alquiler.nombre }}</td>
                 <td>{{ alquiler.localidad }}</td>
                 <td>{{ alquiler.precio_noche }}</td>
@@ -33,6 +35,7 @@
                 <td><a href="{{ alquiler.reservar_en }}" target="_blank">Reservar</a></td>
             </tr>
             {% endfor %}
+            {% endblock %}
         </tbody>
     </table>
 </body>
