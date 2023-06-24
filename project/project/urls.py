@@ -21,7 +21,8 @@ from .views import LandingPage, BarilochePage, CarlospazPage, SaltaPage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', LandingPage.as.view (), name="landing-page"),
-    path('', BarilochePage.as.view(), name="bariloche-page"),
-    path('', CarlospazPage.as.view(), name="carlospaz-page")
+    path('', LandingPage.view (), name="landing-page"),
+    path('', BarilochePage.view(), name="bariloche-page"),
+    path('', CarlospazPage.view(), name="carlospaz-page"),
+    path('', SaltaPage.view(), name="salta-page")
 ]
